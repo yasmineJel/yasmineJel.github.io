@@ -4,12 +4,12 @@
 body, h1, p, select {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Snell Roundhand, cursive;
   }
   
   /* Style pour l'en-tête */
   header {
-    background-color: #3498db;
+    background-color: #236c8c;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -71,7 +71,7 @@ body, h1, p, select {
   #cocktailTitle {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #3498db;
+    color: #e45f21;
   }
   
   /* Style pour le contenu de la recette */
