@@ -24,6 +24,48 @@
     </div>
   </main>
 
-  <script src="js/main.js"></script>
+  <!-- Script pour afficher les recettes -->
+  <script>
+    window.onload = function() {
+      const hash = window.location.hash.substring(1);
+
+      if (hash === 'mojito') {
+        document.getElementById('cocktailTitle').innerText = 'Mojito';
+        document.getElementById('recette').innerHTML = 'Recette du Mojito';
+      } else if (hash === 'sex-on-the-beach') {
+        document.getElementById('cocktailTitle').innerText = 'Sex on the Beach';
+        document.getElementById('recette').innerHTML = 'Recette du Sex on the Beach';
+      } else if (hash === 'aperol-spritz') {
+        document.getElementById('cocktailTitle').innerText = 'Aperol Spritz';
+        document.getElementById('recette').innerHTML = 'Recette de l\'Aperol Spritz';
+      }
+      // Ajouter d'autres conditions pour chaque recette avec son identifiant
+    };
+  </script>
+
+  <!-- Script pour rendre les recettes dynamiques en fonction du nombre de verres -->
+  <script>
+    document.getElementById('verres').addEventListener('change', function() {
+      const nombreVerres = parseInt(this.value);
+      const cocktailTitle = document.getElementById('cocktailTitle');
+      const recette = document.getElementById('recette');
+
+      if (window.location.hash === '#mojito') {
+        cocktailTitle.textContent = 'Mojito';
+        if (nombreVerres === 1) {
+          recette.innerHTML = 'Recette du Mojito pour 1 verre';
+        } else if (nombreVerres === 2) {
+          recette.innerHTML = 'Recette du Mojito pour 2 verres';
+        }
+        // Ajoute d'autres conditions pour différents nombres de verres
+      } else if (window.location.hash === '#sex-on-the-beach') {
+        // Faire de même pour les autres cocktails
+      } else if (window.location.hash === '#aperol-spritz') {
+        // Faire de même pour les autres cocktails
+      }
+      // Ajouter des conditions pour chaque cocktail avec son identifiant
+    });
+  </script>
+
 </body>
 </html>
