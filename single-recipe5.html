@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Recipe || Monkey Edition</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <a href="index.html" class="nav-logo">
+            <img src="./assets/logo.svg" alt="nicolas recipes" />
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link"> home </a>
+          <a href="about.html" class="nav-link"> about </a>
+          <a href="recipes.html" class="nav-link"> recipes </a>
+
+          <div class="nav-link contact-link">
+            <a href="contact.html" class="btn"> contact </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <main class="page">
+      <div class="recipe-page">
+        <section class="recipe-hero">
+          <img
+            src="./assets/recipes/recipe-5.jpeg"
+            class="img recipe-hero-img"
+          />
+          <article class="recipe-info">
+            <h2>New York Sour</h2>
+            <p>
+              Ce cocktail au dégradé jaune et rouge caractéristique plaira aux amateurs de whisky et de saveurs acidulées.
+            </p>
+            <div class="recipe-icons">
+              <article>
+                <i class="fas fa-clock"></i>
+                <h5>prep time</h5>
+                <p>8 min.</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>Difficulté</h5>
+                <p>Moyen.</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>Nombre de verres</h5>
+                <p>1</p>
+              </article>
+            </div>
+          </article>
+        </section>
+        <!-- content -->
+        <section class="recipe-content">
+          <article>
+            <h4>instructions</h4>
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>1. Versez le citron jaune:</p>
+                <div></div>
+              </header>
+              <ul>
+                Découpez un citron jaune en deux.
+              </ul>
+			  <ul>
+                Pressez le citron et versez 3 cl dans un shaker à l’aide d’un doseur.
+              </ul>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>2. Ajoutez du blanc d'œuf:</p>
+                <div></div>
+              </header>
+              <ul>
+                Cassez votre œuf en faisant attention de garder uniquement le blanc d’œuf.
+              </ul>
+			  <ul>
+                A l’aide d’un doseur, versez quelques gouttes dans le shaker selon la quantité de mousse souhaitée.
+              </ul>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>3. Mélangez les ingrédients:</p>
+                <div></div>
+              </header>
+              <ul>
+                Ajoutez quelques glaçons dans le shaker.
+              </ul>
+			  <ul>
+                Ajoutez le whisky et le sirop de canne.
+              </ul>
+			  <ul>
+                Secouez énergiquement pendant une dizaine de secondes.
+              </ul>
+            </div>
+            <!-- end of single instruction -->
+            <!-- single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p>4. Dressez le cocktail:</p>
+                <div></div>
+              </header>
+              <ul>
+                Ajoutez des glaçons dans un verre type old fashioned.
+              </ul>
+			  <ul>
+                Versez le mélange dans le verre en filtrant la glace du shaker.
+              </ul>
+			  <ul>
+                Ajoutez le vin rouge sur le dessus du cocktail à l’aide du dos d’une cuillère à mélange.
+              </ul>
+            </div>
+            <!-- end of single instruction -->
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>ingredients</h4>
+              <p class="single-ingredient">- 6 cl Whisky</p>
+              <p class="single-ingredient">- 2.25 cl Sirop de canne</p>
+              <p class="single-ingredient">- 3 cl Jus d'orange</p>
+			  <p class="single-ingredient">- 2.5 cl Jus de citron jaune pressé</p>
+			  <p class="single-ingredient">- 1.5 Cl Vin rouge</p>
+			  <p class="single-ingredient">- Quelques gouttes de Blanc(s) d'oeuf</p>
+            </div>
+            <div>
+              <h4>tools</h4>
+              <p class="single-tool">- Shaker</p>
+			  <p class="single-tool">- Doseur</p>
+			  <p class="single-tool">- Passoir à cocktail</p>
+			  <p class="single-tool">- Verre old fashioned/Verre à whisky</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="page-footer">
+      <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">NicolasRecipes</span> Built by 
+        <p>Caissière d'intermarché</p>
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
